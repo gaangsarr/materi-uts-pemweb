@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Form Pendaftaran</h1>
+    <hr>
+    <form action="">
+        <fieldset>
+            <label for="email">NIK *</label><br>
+            <input type="text" name="nik" id="nik" placeholder="Masukkan NIK" required autofocus pattern="[0-9]{16}">
+        </fieldset>
+        <fieldset>
+            <label for="email">Nama Lengkap *</label><br>
+            <input type="text" name="name" id="name" placeholder="Masukkan Nama" required autofocus>
+        </fieldset>
+        <fieldset>
+            <label for="date">Birth Date *</label><br>
+            <input type="date" name="date" id="date" required>
+        </fieldset>
+        <fieldset>
+            <label for="date">Gender *</label><br>
+            <input type="radio" name="gender" id="male" required><label for="male">Male</label>
+            <input type="radio" name="gender" id="female" required><label for="female">Female</label>
+        </fieldset>
+        <fieldset>
+            <label for="address">Address *</label><br>
+            <textarea name="address" id="address" cols="50" rows="7" placeholder="Masukkan Alamat"></textarea>
+        </fieldset>
+        <fieldset>
+            <label for="email">Email *</label><br>
+            <input type="email" name="email" id="email" placeholder="Masukkan Email" required>
+        </fieldset>
+        <fieldset>
+            <label for="password">Password *</label><br>
+            <input type="password" name="password" id="password" placeholder="Masukkan Password" required>
+        </fieldset>
+        <fieldset>
+            <label for="req">Syarat *</label><br>
+            <input type="checkbox" name="syarat" id="syarat" required><label for="syarat">Saya menyetujui data saya digunakan sebagaimana mestinya.</label>
+        </fieldset>
+        <input type="submit" value="Login" style="margin-top: 10px;">
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body{
+    background-color: black;
+}
+
+.container {
+    background-color: rgb(69, 82, 93);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: myAnimation 3s infinite;
+}
+
+#slogan {
+    font-size: 16pt;
+    color: green;
+    font-style: italic;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+p {
+    color: navy;
+    text-align: justify;
+    width: 200px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.judul {
+    text-align: center;
+    font-family: HappyDance;
+    color: pink;
+    position: relative;
+    animation: animasiJudul 1s infinite;
+}
+
+@font-face {
+    font-family: HappyDance;
+    src: url(Happy-Dance.ttf);
+}
+
+ul li {
+    display: inline;
+    background-color: aliceblue;
+    border: 1px solid;
+    border-color: #fefefe #bbb #bbb #fefefe;
+    margin: 2px;
+    padding: 5px;
+}
+
+@keyframes myAnimation {
+    from { top: 0px; opacity: 0%; }
+    to { top: 50px; opacity: 100%;}
+}
+
+@keyframes animasiJudul {
+    from {top: 0px; opacity: 0%;}
+    to {top: 30px; opacity: 100%;}
+}

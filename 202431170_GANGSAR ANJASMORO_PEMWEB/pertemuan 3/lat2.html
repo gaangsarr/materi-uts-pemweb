@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+</head>
+<body>
+    <h1>Pendaftaran Lomba Design Web ITPLN 2025</h1>
+    <hr>
+    <form action="">
+        <fieldset>
+            <label for="nama">Nama Lengkap Ketua Tim*</label><br>
+            <input type="text" name="name" id="name" placeholder="Masukkan Nama" required autofocus>
+        </fieldset>
+        <fieldset>
+            <label for="email">Email *</label><br>
+            <input type="email" name="email" id="email" placeholder="Masukkan Email" required>
+        </fieldset>
+        <fieldset>
+            <label for="nim">NIM *</label><br>
+            <input type="text" name="nim" id="nim" placeholder="Masukkan NIM" required pattern="[0-9]{9}">
+        </fieldset>
+        <fieldset>
+            <label for="notelepon">Nomor Telepon *</label><br>
+            <input type="number" name="telepon" id="telepon" placeholder="Masukkan Nomor Telepon" required pattern="[0-9]{13}">
+        </fieldset>
+        <fieldset>
+            <label for="date">Tanggal Lahir *</label><br>
+            <input type="date" name="date" id="date" required>
+        </fieldset>
+        <fieldset>
+            <label for="anggota">Jumlah Anggota Tim *</label><br>
+            <input type="number" name="anggota" id="anggota" required>
+        </fieldset>
+        <fieldset>
+            <label for="kategori">Kategori Lomba *</label><br>
+            <input type="radio" name="kategori" id="uiux" required><label for="male">UI and UX</label>
+            <br>
+            <input type="radio" name="kategori" id="webdev" required><label for="female">Web Development</label>
+        </fieldset>
+        <fieldset>
+            <label for="req">Persetujuan & Syarat Ketentuan *</label><br>
+            <input type="checkbox" name="syarat" id="syarat" required><label for="syarat">Saya menyetujui semua persyaratan yang teratur dalam lomba ini.</label>
+        </fieldset>
+        <fieldset>
+            <label for="alasan">Alasan *</label><br>
+            <textarea name="alasan" id="alasan" cols="50" rows="7" placeholder="Masukkan Alasan"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" style="margin-top: 10px;">
+    </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body {
+    background-color: skyblue;
+}
+
+@media screen and (orientation: portrait){
+    body{
+        background-color: coral;
+    }
+}
