@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Gangsar Anjasmoro</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-box">
+        <h1 class="logo"><a href="index.html">GA</a></h1>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="kontak">
+      <div class="form-box">
+        <h1>Hubungi Saya</h1>
+        <p class="subtitle">
+          Tertarik untuk bekerja sama? Isi form di bawah ini!
+        </p>
+
+        <form class="form-kontak">
+          <div class="input-box">
+            <label>Nama Lengkap *</label>
+            <input
+              type="text"
+              name="nama"
+              class="input-text"
+              placeholder="Masukkan nama lengkap"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Email *</label>
+            <input
+              type="email"
+              name="email"
+              class="input-text"
+              placeholder="contoh@email.com"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Nomor Telepon</label>
+            <input
+              type="tel"
+              name="telepon"
+              class="input-text"
+              placeholder="08xxxxxxxxxx"
+            />
+          </div>
+
+          <div class="input-box">
+            <label>Jenis Layanan *</label>
+            <select name="layanan" class="input-select" required>
+              <option value="">-- Pilih Layanan --</option>
+              <option value="website">Pembuatan Website</option>
+              <option value="landing">Landing Page</option>
+              <option value="ecommerce">E-Commerce</option>
+              <option value="konsultasi">Konsultasi Teknologi</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <label>Estimasi Budget</label>
+            <div class="pilihan-budget">
+              <label class="pilihan">
+                <input
+                  type="radio"
+                  name="budget"
+                  value="1-3jt"
+                  class="input-radio"
+                />
+                Rp 1 - 3 Juta
+              </label>
+              <label class="pilihan">
+                <input
+                  type="radio"
+                  name="budget"
+                  value="3-5jt"
+                  class="input-radio"
+                />
+                Rp 3 - 5 Juta
+              </label>
+              <label class="pilihan">
+                <input
+                  type="radio"
+                  name="budget"
+                  value="5jt+"
+                  class="input-radio"
+                />
+                Di atas Rp 5 Juta
+              </label>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>Deskripsi Proyek *</label>
+            <textarea
+              name="pesan"
+              rows="6"
+              class="input-textarea"
+              placeholder="Ceritakan detail proyek yang Anda inginkan..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="input-box">
+            <label class="centang">
+              <input type="checkbox" name="newsletter" class="input-checkbox" />
+              Saya ingin menerima update terbaru tentang teknologi dan web
+              development
+            </label>
+          </div>
+
+          <button type="submit" class="tombol-kirim">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Gangsar Anjasmoro. All Rights Reserved.</p>
+      <p>
+        Mahasiswa
+        <a href="https://itpln.ac.id" target="_blank" class="footer-link">
+          Institut Teknologi PLN
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
